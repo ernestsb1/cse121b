@@ -6,24 +6,23 @@ const currentYear = 2024;
 
 /* Step 2 - Variables */
 
-const profilePicture = "images/my image .jpg";
+const profilePicture = "images/my image.jpg";
 
 
 
 /* Step 3 - Element Variables */
-
-const foodElement = document.getElementById("food")
+const nameElement = document.getElementById (" name");
 
 const yearElement = document.querySelector("#year");
 
-const imageElement = document.getElementById("profile-image");
+
 
 
 /* Step 4 - Adding Content */
 
-nameElement.innerHTML = "<strong> ${fullName}</strong>";
-
+nameElement.innerHTML = `<strong>${fullName}</strong>`;
 yearElement.textContent = currentYear;
+
 
 imageElement.setAttribute("src", profilePicture);
 
@@ -34,10 +33,15 @@ imageElement.setAttribute("src", profilePicture);
 
 /* Step 5 - Array */
 
-const favoriteFoods = ["Pizza", "Pasta",  "Lasagne", "Gelato (Ice cream)",];
+const favoriteFoods = ["Pizza", "Pasta",  "Lasagne", "Gelato (Ice cream)", "Focaccia", "Beef patty", "Jambalaya", "Jollof rice", "Beef Suya", "Salad" ];
 
-const favoriteFood = "Ice cream";
-
+const favoriteFood = "Banana";
+favoriteFoods.push(favoriteFood);
+foodElement.innerHTML += favoriteFoods.join("<br>");
+favoriteFoods.shift();
+favoriteFoods.pop();
+foodElement.innerHTML += "<br>" + 
+favoriteFoods.join("<br>");
 
 
 
