@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Forecast</title>
+  <script src="script/project.js"></script> <!-- Include the JavaScript file -->
+</head>
+
+
+
+
+<body>
+
+  
+  <h1>Weather Forecast</h1>
+  <form onsubmit="event.preventDefault(); getWeather();">
+    <input type="text" id="location" placeholder="Enter a location">
+    <button type="submit">Get Weather</button>
+  </form>
+
+  <div id="current-weather"></div>
+  <div id="forecast"></div>
+</body>
+
+
+<footer>
+  &copy;<span id="year"></span> | Week 06 - Biography | CSE 121b
+</footer>
+<script src="scripts/main.js"></script>
+<script>
+  document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+<script src="scripts/project.js"></script>
+</body>
+
+</html>
