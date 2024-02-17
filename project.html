@@ -7,15 +7,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather Forecast</title>
   <script src="script/project.js"></script> <!-- Include the JavaScript file -->
+  rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
 </head>
-
+<nav>
+  <ul id="menu">
+    <li><a id="toggleMenu">&equiv;</a></li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="w01-task.html">W1 Task</a></li>
+    <li><a href="w03-task.html">W3 Task</a></li>
+    <li><a href="w04-task.html" class="active">W4 Task</a></li>
+    <li><a href="w05-task.html">W5 Task</a></li>
+    <li><a href="project.html">Project</a></li>
+  </ul>
+</nav>
 
 
 
 <body>
 
-  
-  <h1>Weather Forecast</h1>
+  <div id="man"></div>
+  <h1 id="home">Weather Forecast</h1>
   <form onsubmit="event.preventDefault(); getWeather();">
     <input type="text" id="location" placeholder="Enter a location">
     <button type="submit">Get Weather</button>
@@ -27,7 +39,7 @@
 
 
 <footer>
-  &copy;<span id="year"></span> | Week 06 - Biography | CSE 121b
+  &copy;<span id="year"></span> | Week 06 Project - Biography | CSE 121b
 </footer>
 <script src="scripts/main.js"></script>
 <script>
